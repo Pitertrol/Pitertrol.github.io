@@ -1,3 +1,43 @@
+@-webkit-keyframes logoGoUp {
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes logoGoUp {
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes showHiddenMain {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showHiddenMain {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -32,6 +72,15 @@ body {
 .mobile-wiev-main {
   width: 100%;
   font-family: 'Roboto', sans-serif;
+  opacity: 0;
+  -webkit-animation-name: showHiddenMain;
+          animation-name: showHiddenMain;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .mobile-wiev-main h4 {
@@ -52,7 +101,17 @@ body {
 
 .mobile-wiev-header {
   width: 100%;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
   margin-bottom: 10vw;
+  -webkit-animation-name: logoGoUp;
+          animation-name: logoGoUp;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .mobile-wiev-header h3 {

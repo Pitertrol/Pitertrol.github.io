@@ -1,3 +1,21 @@
+@keyframes logoGoUp {
+    from{
+        transform: translateY(200px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes showHiddenMain {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+
 *{
     box-sizing: border-box;
 }
@@ -32,10 +50,17 @@ body{
                 font-weight: 300;
                 font-size: 18px;
             }
+            opacity: 0;
+            animation-name: showHiddenMain;
+            animation-duration: .3s;
+            animation-delay: .7s;
+            animation-fill-mode: forwards;
         }
 
         &-header{
+            
             width:100%;
+            transform: translateY(200px);
             h3{
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
@@ -49,6 +74,11 @@ body{
                 width:100%;
                 max-width: 320px;
             }
+
+            animation-name: logoGoUp;
+            animation-duration: .6s;
+            animation-delay: .5s;
+            animation-fill-mode: forwards;
         }
        
 }
