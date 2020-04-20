@@ -1,0 +1,132 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.mobile-wiev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #311b92;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  color: #fefefe;
+  padding: 25px 10vw 10px;
+}
+
+.mobile-wiev-main {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mobile-wiev-main h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mobile-wiev-main h2 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.mobile-wiev-main h3 {
+  margin: 13px 0;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.mobile-wiev-header {
+  width: 100%;
+  margin-bottom: 10vw;
+}
+
+.mobile-wiev-header h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+
+.mobile-wiev-header img {
+  width: 100%;
+  max-width: 320px;
+}
+
+.title-with-bottom-underline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  border-bottom: 3px solid #fefefe;
+  width: 100%;
+  margin: 0 auto 30px;
+  padding: 10px 0;
+  max-width: 300px;
+}
+
+.btn {
+  border-radius: 30px;
+  width: 100%;
+  margin: 10px auto;
+  border: none;
+  min-width: 236px;
+  max-width: 300px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.btn-with-icon-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 10px;
+}
+
+.btn-with-icon-block img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.btn-fb {
+  background-color: #03A9F4;
+  color: #fefefe;
+}
+
+.btn-mail {
+  background-color: #fefefe;
+}
+
+.pseudo-footer {
+  margin-top: 45px;
+  font-size: 14px;
+}
+
+.preview {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  font-size: 10px;
+}
+/*# sourceMappingURL=mobileWiev.css.map */
